@@ -848,9 +848,9 @@ align-items: center;
     display: flex;
     flex-direction: column;
     justify-content:center;
-  background-image: url("..maison.png");
-  background-size: cover;
-  background-position: center;
+    background-image: url("maison.png");
+    background-size: cover;
+    background-position: center;
   
 }
 .contenuhero{
