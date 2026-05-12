@@ -802,7 +802,7 @@ height:90px;
 @media (max-width:820px){
 body{
     background-color:#F8FAFC;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 /* menu de navigation */
 .premier{
@@ -1460,7 +1460,7 @@ height:90px;
 @media (max-width:414px){
 body{
     background-color:#F8FAFC;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 /* hero mobile */
