@@ -1523,11 +1523,11 @@ margin-right: 20px;
 .contentmenu{
     background-color: #1E3A8A;
     color: #FFFFFF;
-    height: 25vh;
+    height: 35vh;
     cursor: pointer;
     width: 30%;
     position: fixed;
-    top: 10%;
+    top: 13%;
     right: -100%;
     align-items: center;
     padding-top:5rem ;
