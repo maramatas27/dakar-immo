@@ -19,13 +19,12 @@ p{
 }
 
 .premier{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
     margin: 0 auto;
+    background: #1E3A8A;
 }
 .logo{
     
@@ -41,7 +40,7 @@ p{
     height: 120px;
 }
 .contentmenu{
-
+background-color: #1E3A8A;
 width: 50%;
 height: 50px;
 display: flex;
@@ -49,13 +48,33 @@ flex-direction: row;
 justify-content: space-around;
 align-items: center;
 }
+.menu-toggle{
+
+    display: none;
+}
 
 .menu{
     font-size: 25px;
 }
+
+.hamburger{
+    display:none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+.hamburger span{
+width: 30px;
+height: 3px;
+background-color: #FFFFFF ;
+transition: all 0.3s ease-in-out;
+
+}
 .menu a{
     text-decoration: none;
-    color: #1E3A8A;
+    color: #FFFFFF;
 
 }
 
@@ -262,7 +281,7 @@ color: #1E3A8A;
     margin: 10px;
 }
 .badge i{
-    color: #1E3A8A;
+    color: #F59E0B;
     font-size: 20px;
 }
 .type{
@@ -309,7 +328,7 @@ font-size: 70px;
 display: flex;
 justify-content: center;
 align-items: center;
-color: white;
+color:#F59E0B;
 }
 .ta{
 
@@ -509,6 +528,9 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 }
+.populaire2ser i{
+    color: #F59E0B;
+}
 .populaire2ser p{
    
     font-size: 22px;
@@ -582,6 +604,7 @@ color:#1E3A8A;
 .s2 i{
 
     margin-top: 5px;
+    color: #F59E0B;
 }
 
 .ta2{
@@ -607,6 +630,7 @@ display: flex;
 }
 .valeur i{
     font-size: 5px;
+    color: #F59E0B;
 }
 .experiences{
 
@@ -663,7 +687,7 @@ border-left:1px solid  #1E3A8A;
     font-size: 10px;
 }
 .vrai i{
-
+    color: #F59E0B;
     font-size: 15px;
 }
 .vrai p{
@@ -760,6 +784,9 @@ align-items: center;
 justify-content: center;
 
 }
+.s4 i{
+    color: #F59E0B;
+}
 .s4 p{
 color:#1E3A8A;
 font-size: 40px;
@@ -839,7 +866,7 @@ align-items: center;
 }
 .menu a{
     text-decoration: none;
-    color: #1E3A8A;
+    color: #FFFFFF;
 
 }
 .hero{
@@ -992,7 +1019,7 @@ font-size: 70px;
 display: flex;
 justify-content: center;
 align-items: center;
-color: white;
+color:#F59E0B;
 }
 .ta{
 
@@ -1200,6 +1227,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+}
+
+.populaire2ser i{
+    color: #F59E0B;
 }
 .populaire2ser p{
    
@@ -1425,6 +1456,9 @@ align-items: center;
 justify-content: center;
 
 }
+.s4 i{
+    color: #F59E0B;
+}
 .s4 p{
 color:#1E3A8A;
 font-size: 40px;
@@ -1462,6 +1496,80 @@ body{
     background-color:#F8FAFC;
     overflow-x: auto;
 }
+/* menu mobile */
+.hamburger{
+display: flex;
+margin-right: 20px;
+}
+
+
+
+.logo{
+    
+     width: 30%;
+     height: 130px;
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+}
+.log{
+    
+    width: 95%;
+    height: 120px;
+}
+
+
+
+.contentmenu{
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    height: 25vh;
+    cursor: pointer;
+    width: 30%;
+    position: fixed;
+    top: 10%;
+    right: -100%;
+    align-items: center;
+    padding-top:5rem ;
+    flex-direction: column ;
+    transition:right 0.3s ease-in-out;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+
+.menu-toggle:checked~.contentmenu{
+    
+    right: 0;
+   
+}
+
+
+
+
+
+.menu-toggle:checked ~ .hamburger span:nth-child(1){
+transform: rotate(45deg) translate(5px,5px);
+}
+.menu-toggle:checked ~ .hamburger span:nth-child(2){
+opacity: 0;
+}
+.menu-toggle:checked ~ .hamburger span:nth-child(3){
+transform: rotate(-45deg) translate(6px,-5px);
+}
+
+
+
+
+
+
+
+
+
 
 /* hero mobile */
 .hero{
@@ -1621,7 +1729,7 @@ font-size: 50px;
 display: flex;
 justify-content: center;
 align-items: center;
-color: white;
+color:#F59E0B;
 }
 .ta{
 
@@ -1862,6 +1970,9 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 }
+.populaire2ser i{
+    color: #F59E0B;
+}
 .populaire2ser p{
    
     font-size: 22px;
@@ -2093,6 +2204,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 
+}
+.s4 i{
+    color: #F59E0B;
 }
 .s4 p{
 color:#1E3A8A;
